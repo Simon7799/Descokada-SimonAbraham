@@ -218,6 +218,27 @@ h2 {
     background-color: #020220;
 }
 
+.redes {
+    background-color: #020220;
+    margin-bottom: 15px;
+}
+
+.container i {
+
+    font-size: 40px;
+    color: white;
+    gap: 5px;
+}
+
+.container a {
+    text-decoration: none;
+    color: white;
+}
+
+.container i:hover, .container a:hover{
+    color: rgba(0, 255, 255, 0.589);
+    transition: 1s;
+}
 
 /*GALERIA*/
 
