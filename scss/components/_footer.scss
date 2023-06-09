@@ -1,0 +1,33 @@
+.footer {
+    display: flex;
+    justify-content: end;
+    background-color: $primary-color;
+    border: #0ce6e69f solid 1px;
+    text-align: end;
+    padding: 2px 10px;
+
+    a {
+        text-decoration: none;
+    }
+
+    i {
+        display: flex;
+        flex-direction: row;
+        color: $light-color;
+        font-size: 20px;
+        padding: 5px;
+
+        &:hover {
+            color: #0ce6e69f;
+        }
+    }
+}
+
+.copy {
+    color: $light-color;
+    font-size: 10px;
+    font-family: "IBM Plexo Mono";
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-align: center;
+}

@@ -1,0 +1,44 @@
+.menu {
+    background-color: $nav-color;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        object-fit: cover;
+        border-radius: 100%;
+    }
+
+    img {
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+    }
+
+    ul {
+        @include flex(none, center, center, 0px);
+        list-style-type: none;
+        text-decoration: none;
+
+        li {
+            padding: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            padding: 5px;
+            font-family: "teko";
+            font-size: 30px;
+            color: $light-color;
+
+            &:hover {
+                background-color: $light-color;
+                border-radius: 10px;
+                color: $nav-color;
+                transition: 1s;
+            }
+        }
+    }
+}

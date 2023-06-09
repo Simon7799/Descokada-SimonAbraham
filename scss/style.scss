@@ -1,0 +1,19 @@
+// IMPORT BASE
+
+@import "base/vars";
+@import "base/utilities";
+@import "base/resets";
+
+// IMPORT COMPONENTS
+
+@import "components/footer";
+@import "components/navbar";
+
+// IMPORT LAYOUT
+
+@import "layout/contacto";
+@import "layout/galeria";
+@import "layout/index";
+@import "layout/integrantes";
+@import "layout/mediaqueris";
+@import "layout/torenamusic";

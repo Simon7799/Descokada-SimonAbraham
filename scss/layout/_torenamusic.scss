@@ -1,0 +1,40 @@
+// TORENA MUSIC
+
+.tm {
+    text-align: center;
+    padding: 10px;
+
+    img {
+        @include images(350px, 200px, cover);
+        border-radius: 50%;
+
+        &:hover {
+            border: 3px double $light-color;
+            transition: .5s;
+        }
+    }
+
+
+}
+
+
+.estudio {
+    text-align: center;
+
+    .carousel-inner {
+        @include images(100%, 600px, cover)
+    }
+
+    .carousel-item {
+        @include images(100%, 800px, cover);
+    }
+}
+
+
+.torenamusic {
+    text-align: center;
+    background-color: $primary-color;
+    color: $light-color;
+    font-family: $font;
+    font-size: 35px;
+}

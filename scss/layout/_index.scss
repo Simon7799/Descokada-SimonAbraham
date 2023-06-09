@@ -1,0 +1,46 @@
+h1 {
+    background-color: $primary-color;
+    font-family: $font;
+    text-align: center;
+    color: $light-color;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+h2 {
+    background-color: $primary-color ;
+    text-align: center;
+    font-size: 20px;
+    color: $light-color;
+    padding: 5px;
+}
+
+.carousel-inner {
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+
+    .carousel-item{
+        @extend .carousel-inner
+    }
+
+    .carousel-item img {
+        @extend .carousel-inner
+    }
+
+    .carousel-item p {
+        background-color: $primary-color;
+    }
+}
+
+
+.card {
+    background-color: $card-color;
+    color: $light-color;
+    border-color: $light-color;
+    text-align: center;
+
+    img {
+        border-radius: 5px;
+    }
+}

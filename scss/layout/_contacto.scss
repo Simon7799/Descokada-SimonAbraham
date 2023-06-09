@@ -1,0 +1,68 @@
+// CONTACTOS
+
+.logo-form {
+    text-align: center;
+
+    img {
+        @include images(200px, 200px, cover);
+        margin-top: 10px;
+        margin-bottom: 15px;
+        border-radius: 100%;
+
+        &:hover{
+            border: 2px solid $light-color;
+            transition: .5s;
+        }
+    }
+}
+
+
+.formulario {
+
+    @include flex(column, center ,center, 2px);
+
+    .form-label {
+        text-align: center;
+        width: 100%;
+        color: $light-color;
+    }
+}
+
+.buttom{
+    margin-bottom: 10px;
+
+    input{
+        background-color: $primary-color;
+    }
+}
+
+.redes {
+    background-color: $primary-color;
+    margin-bottom: 15px;
+
+    .container {
+        i {
+    
+            font-size: 40px;
+            color: $light-color;
+            gap: 5px;
+    
+            &:hover{
+                color: rgba(0, 255, 255, 0.589);
+                transition: 1s;
+            }
+        }
+    
+        a {
+            text-decoration: none;
+            color: $light-color;
+    
+            &:hover{
+                color: rgba(0, 255, 255, 0.589);
+                transition: 1s;
+            }
+        }
+    }
+}
+
+
