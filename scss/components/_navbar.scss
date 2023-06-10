@@ -1,4 +1,4 @@
-.menu {
+/*.menu {
     background-color: $nav-color;
     display: flex;
     flex-wrap: wrap;
@@ -41,4 +41,47 @@
             }
         }
     }
+}*/
+
+.navbar {
+    font-family: "teko";
+    font-size: 25px;
+
+    .offcanvas-body {
+        background-color: $nav-color;
+        color: white;
+    }
+
+    .container-fluid{
+        padding-left:10px;
+        background-color: $nav-color;
+
+        .navbar-toggler {
+            background-color: $light-color;
+            color: gray;
+        }
+
+        img {
+            object-fit: cover;
+            width: 60px;
+            height: 60px;
+            border-radius: 100%;
+        }
+
+
+        a {
+            color: white;
+
+            &:hover {
+                background-color: $light-color;
+                border-radius: 10px;
+                color: $nav-color;
+                transition: 1s;
+            }
+        }
+    }
+
 }
+
+
+

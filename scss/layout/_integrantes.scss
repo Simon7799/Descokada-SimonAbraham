@@ -7,7 +7,7 @@
     max-height: 100%;
 
     .desko {
-        @include flex(none, center, center, 5px);
+        @include flex(column, center ,center , 5px);
         width: 70%;
         height: 300px;
         background-color: $primary-color;
@@ -20,16 +20,45 @@
         }
 
         &__integrantes {
-            padding: 30px;
+            padding: 20px;
+
+            p {
+                color: white;
+                font-size: 20px;
+                font-family: "IBM Plex Mono"
+            }
+
+            &__ig {
+                width: 200px;
+                display: flex;
+                justify-content: center;
+                background-color: $primary-color;
+                border: #0ce6e69f solid 1px;
+                text-align: center;
+                padding: 2px 10px;
+
+                a {
+                    text-decoration: none;
+                }
+
+                i {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    color: $light-color;
+                    font-size: 20px;
+                    padding: 5px;
+
+                    &:hover {
+                        color: #0ce6e69f;
+                    }
+                }
+            }
         }
 
         img {
             @include images(30%, 100%, cover);
             text-align: center;
-        }
-
-        &:nth-child(2n+2) {
-            flex-direction: row-reverse;
         }
     
         &:hover {

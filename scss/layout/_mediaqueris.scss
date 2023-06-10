@@ -7,32 +7,38 @@
         "area4 area2 area2"
         "area6 area5 area5"
         "area3 area7 area8";
+        
+        .d2 {
+            width: 100%;
+            height: 100%;
+        
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+}
+    .deskoo {
+        background-color: $main-color;
+
+        .desko {
+            background-color: rgba(3, 3, 44, 0.527);
+            display: flex;
+            flex-direction: column-reverse;
+            width: 99%;
+            height: 180px;
+        }
+    }
 }
 
-.galeria img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.d2 {
-    width: 100%;
-    height: 100%;
-}
-.d2 img {
-    width: 100%;
-    height: 100%;
-}
-}
 
 @media only screen and (max-width:768px){
-
-    .menu{
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-    }
 
     .galeria {
         grid-template-columns: repeat(2, 1fr);
@@ -43,26 +49,17 @@
         "area6 area5"
         "area3 area7"
         "area8 area8";
-    }
 
-    .d2 {
-        width: 100%;
-        height: 100%;
-    }
-    .d2 img {
-        width: 100%;
-        height: 100%;
-    }
 
-    .menu {
-        flex-direction: column;
-    }
-
-    .menu ul {
-        flex-direction: column;
-        padding-right: 2rem;
-        justify-content: center;
-        align-items: center;
+        .d2 {
+            width: 100%;
+            height: 100%;
+    
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
     }
 }
 
@@ -71,8 +68,5 @@
         display: flex;
         flex-direction: column;
     }
-    .menu {
-        display: flex;
-        flex-direction: column;
-    }
+
 }
