@@ -1,3 +1,4 @@
+//NAVBAR
 
 .navbar {
     font-family: "teko";
@@ -5,7 +6,7 @@
 
     .offcanvas-body {
         background-color: $nav-color;
-        color: white;
+        color: $light-color;
     }
 
     .container-fluid{
@@ -26,7 +27,7 @@
 
 
         a {
-            color: white;
+            color: $light-color;
 
             &:hover {
                 background-color: $light-color;
