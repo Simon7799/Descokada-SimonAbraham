@@ -45,3 +45,54 @@ h2 {
         border-radius: 5px;
     }
 }
+
+.carousell {
+    width: 100%;
+    height: 600px;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+
+    .descokada {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        position: absolute;
+        opacity: 0;
+        animation: slide-fade 12s infinite;
+
+        &:nth-child(1) {
+            animation-delay: 0;
+        }
+
+        &:nth-child(2){
+            animation-delay: 4s;
+        }
+
+        &:nth-child(3) {
+            animation-delay: 8s;
+        }
+    }
+
+    img {
+        @include images(900px, 100%, cover);
+    }
+}
+
+@keyframes slide-fade {
+    0% {
+        opacity: 0;
+    }
+
+    8% {
+        opacity: 1;
+    }
+
+    33% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+}
