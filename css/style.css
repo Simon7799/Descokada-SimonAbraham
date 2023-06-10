@@ -40,50 +40,6 @@ body {
   text-align: center;
 }
 
-/*.menu {
-    background-color: $nav-color;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    img {
-        object-fit: cover;
-        border-radius: 100%;
-    }
-
-    img {
-        width: 60px;
-        height: 60px;
-        border-radius: 100%;
-    }
-
-    ul {
-        @include flex(none, center, center, 0px);
-        list-style-type: none;
-        text-decoration: none;
-
-        li {
-            padding: 10px;
-        }
-
-        a {
-            text-decoration: none;
-            padding: 5px;
-            font-family: "teko";
-            font-size: 30px;
-            color: $light-color;
-
-            &:hover {
-                background-color: $light-color;
-                border-radius: 10px;
-                color: $nav-color;
-                transition: 1s;
-            }
-        }
-    }
-}*/
 .navbar {
   font-family: "teko";
   font-size: 25px;
@@ -323,9 +279,6 @@ h2 {
 .deskoo .desko h3 {
   color: rgba(12, 230, 230, 0.6235294118);
 }
-.deskoo .desko__integrantes {
-  padding: 20px;
-}
 .deskoo .desko__integrantes p {
   color: white;
   font-size: 17px;
@@ -386,15 +339,9 @@ h2 {
     height: 100%;
     object-fit: cover;
   }
-  .deskoo {
-    background-color: #1e1e2e;
-  }
-  .deskoo .desko {
-    background-color: rgba(3, 3, 44, 0.527);
-    display: flex;
-    flex-direction: column-reverse;
-    width: 99%;
-    height: 180px;
+  .carousell {
+    width: 100%;
+    height: 450px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -415,11 +362,34 @@ h2 {
     width: 100%;
     height: 250px;
   }
+  .deskoo {
+    background-color: #1e1e2e;
+    display: flex;
+    flex-direction: column;
+  }
+  .deskoo .desko {
+    background-color: rgba(3, 3, 44, 0.527);
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 320px;
+    padding-bottom: 5px;
+    flex-wrap: nowrap;
+  }
+  .deskoo .desko img {
+    width: 150px;
+    height: 150px;
+    padding-top: 5px;
+  }
 }
 @media only screen and (max-width: 480px) {
   .galeria {
     display: flex;
     flex-direction: column;
+  }
+  .carousell {
+    width: 100%;
+    height: 200px;
   }
 }
 .tm {
@@ -439,6 +409,7 @@ h2 {
 
 .torenamusic {
   text-align: center;
+  padding: 20px;
   background-color: #020220;
   color: white;
   font-family: "teko";

@@ -24,17 +24,10 @@
             object-fit: cover;
         }
 }
-    .deskoo {
-        background-color: $main-color;
-
-        .desko {
-            background-color: rgba(3, 3, 44, 0.527);
-            display: flex;
-            flex-direction: column-reverse;
-            width: 99%;
-            height: 180px;
-        }
-    }
+.carousell {
+    width: 100%;
+    height: 450px;
+}
 }
 
 
@@ -66,12 +59,40 @@
         width: 100%;
         height: 250px;
     }
+
+    .deskoo {
+        background-color: $main-color;
+        display: flex;
+        flex-direction: column;
+
+        .desko {
+            background-color: rgba(3, 3, 44, 0.527);
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            height: 320px;
+            padding-bottom: 5px;
+            flex-wrap: nowrap;
+
+            img{
+                width: 150px;
+                height: 150px;
+                padding-top: 5px;
+            }
+        }
+    }
+
 }
 
 @media only screen and (max-width:480px){
     .galeria {
         display: flex;
         flex-direction: column;
+    }
+
+    .carousell {
+        width: 100%;
+        height: 200px;
     }
 
 }
