@@ -17,20 +17,6 @@
 
 }
 
-
-.estudio {
-    text-align: center;
-
-    .carousel-inner {
-        @include images(100%, 600px, cover)
-    }
-
-    .carousel-item {
-        @include images(100%, 800px, cover);
-    }
-}
-
-
 .torenamusic {
     text-align: center;
     background-color: $primary-color;

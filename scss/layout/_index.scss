@@ -15,25 +15,6 @@ h2 {
     padding: 5px;
 }
 
-.carousel-inner {
-    height: 600px;
-    object-fit: cover;
-    border-radius: 10px;
-
-    .carousel-item{
-        @extend .carousel-inner
-    }
-
-    .carousel-item img {
-        @extend .carousel-inner
-    }
-
-    .carousel-item p {
-        background-color: $primary-color;
-    }
-}
-
-
 .card {
     background-color: $card-color;
     color: $light-color;

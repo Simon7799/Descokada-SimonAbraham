@@ -241,15 +241,6 @@ h2 {
   padding: 5px;
 }
 
-.carousel-inner, .carousel-inner .carousel-item img, .carousel-inner .carousel-item img .carousel-item, .carousel-inner .carousel-item {
-  height: 600px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-.carousel-inner .carousel-item p {
-  background-color: #020220;
-}
-
 .card {
   background-color: black;
   color: white;
@@ -444,20 +435,6 @@ h2 {
 .tm img:hover {
   border: 3px double white;
   transition: 0.5s;
-}
-
-.estudio {
-  text-align: center;
-}
-.estudio .carousel-inner, .estudio .carousel-inner .carousel-item, .carousel-inner .estudio .carousel-item, .estudio .carousel-inner .carousel-item img, .carousel-inner .carousel-item .estudio img {
-  width: 100%;
-  height: 600px;
-  object-fit: cover;
-}
-.estudio .carousel-item {
-  width: 100%;
-  height: 800px;
-  object-fit: cover;
 }
 
 .torenamusic {
