@@ -75,7 +75,7 @@ h2 {
     }
 
     img {
-        @include images(900px, 100%, cover);
+        @include images(100%, 100%, cover);
     }
 }
 

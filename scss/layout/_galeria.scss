@@ -20,7 +20,7 @@
             @include images(100%, 100%, cover);
 
             &:hover{
-                border: 5px solid $light-color;
+                border: 3px solid $light-color;
                 border-radius: 20px;
                 transition: .5s;
             }
